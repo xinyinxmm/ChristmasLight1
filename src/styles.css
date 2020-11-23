@@ -1,0 +1,157 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #160f30;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.container {
+  border-radius: 25px;
+  height: 20vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.snow-container {
+  padding-left: 350px;
+  padding-right: 350px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.light {
+  padding-bottom: 12px;
+  display: flex;
+  margin: 1rem;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background: rgba(0, 0, 0, 0.3);
+  position: relative;
+  transition: 1s all ease;
+  box-shadow: 0px 0px 10px 2px #fff8cd;
+}
+
+.light:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 17.5px;
+  top: -15px;
+  margin: 0;
+  padding: 0;
+  display: block;
+  background: rgb(68, 53, 73);
+  border-radius: 2px;
+  display: inline-block;
+  border-bottom: 2px solid rgb(97, 81, 107);
+}
+
+.light:after {
+  position: absolute;
+  content: "";
+  top: -136px;
+  left: 24px;
+  position: absolute;
+  width: 10px;
+  height: 120px;
+  border-left: solid #625261 2px;
+}
+
+@keyframes stretch {
+  from {
+    opacity: 0.2;
+  }
+
+  to {
+    opacity: 1;
+  }
+
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.red {
+  top: 0px;
+  background-color: #d7acd4;
+  animation-name: stretch;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+.yellow {
+  top: 44px;
+  background-color: #f2f2b0;
+  animation-name: stretch;
+  animation-duration: 1.8s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+.blue {
+  top: 64px;
+  background-color: #bae5d5;
+  animation-name: stretch;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+.green {
+  background-color: #a5bdfd;
+  animation-name: stretch;
+  animation-duration: 2.2s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+.text {
+  font-family: serif;
+  padding-top: 120px;
+  text-shadow: 0px 0px 20px #fff8cd;
+  font-size: 56px;
+  color: white;
+}
+
+.caption {
+  font-size: 32px;
+  font-family: serif;
+  text-shadow: 0px 0px 20px #fff8cd;
+  color: white;
+}
